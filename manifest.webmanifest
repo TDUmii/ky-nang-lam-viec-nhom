@@ -1,0 +1,26 @@
+{
+  "name": "Góc Học Nhóm - Kỹ năng làm việc nhóm",
+  "short_name": "Góc học nhóm",
+  "description": "161 câu trắc nghiệm Lịch sử Đảng, ôn tập, thi thử và làm nhanh 3–5 phút",
+  "lang": "vi-VN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f9f6f0",
+  "theme_color": "#f3eee5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

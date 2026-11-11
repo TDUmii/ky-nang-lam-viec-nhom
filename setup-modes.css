@@ -1,0 +1,36 @@
+/* Distinct study and exam setup surfaces */
+.setup-mode-banner{display:flex;align-items:center;gap:21px;position:relative;overflow:hidden;border:1px solid #d8e5fb;border-radius:19px;padding:24px 26px;margin:0 0 22px;background:linear-gradient(110deg,#edf4ff,#f9fbff);color:#263c62}
+.setup-mode-banner::after{content:"";position:absolute;right:-45px;top:-75px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(75,111,203,.15);box-shadow:0 0 0 28px rgba(98,135,234,.035);pointer-events:none}
+.setup-mode-banner.exam-banner{border-color:#d5def9;background:linear-gradient(110deg,#eaf0ff,#f7faff)}
+.setup-mode-banner.study-banner{border-color:#cee9db;background:linear-gradient(110deg,#edf9f2,#f9fcfb)}
+.setup-mode-emblem{width:64px;height:64px;border-radius:19px;display:grid;place-items:center;flex:none;background:#dbe6ff;color:#365ed7}
+.setup-mode-emblem svg{width:30px;height:30px}
+.study-banner .setup-mode-emblem{color:#148a62;background:#d8f3e6}
+.setup-mode-copy{flex:1;min-width:0;position:relative;z-index:1}
+.setup-mode-kicker{font-size:10px;letter-spacing:1.5px;font-weight:850;color:#5274d4;margin-bottom:5px}
+.study-banner .setup-mode-kicker{color:#238763}
+.setup-mode-banner h2{font-size:21px;margin:0 0 5px;font-weight:770}
+.setup-mode-banner p{font-size:12px;color:#70819b;margin:0;max-width:590px;line-height:1.6}
+.setup-switch{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:11px 14px;min-height:43px;flex:none;white-space:nowrap;border:1px solid #cbd9f3;background:white;color:#3459bf;border-radius:10px;font-weight:740;font-size:12px;box-shadow:0 4px 12px rgba(36,77,155,.055);transition:border-color .15s,background .15s}
+.setup-switch:hover{background:#f3f6ff;border-color:#9bb1ea}
+.setup-switch svg{height:18px;width:18px}
+.study-banner .setup-switch{color:#168761;border-color:#b9e1d0}
+.study-banner .setup-switch:hover{background:#f0f9f4}
+.setup-card .setup-section-top{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:23px}
+.setup-section-top h2{margin:6px 0 6px;font-size:23px;letter-spacing:-.6px}
+.setup-section-top p{margin:0;color:#8290a5;line-height:1.65;font-size:12px}
+.setup-card .form-row{margin:20px 0}
+.setup-card .form-row label.caption{margin-bottom:9px}
+.setup-no-timer{display:flex;gap:12px;align-items:flex-start;border:1px solid #d4eadf;background:#f0faf4;padding:16px;border-radius:12px;margin:24px 0;color:#208361}
+.setup-no-timer svg{flex:0 0 20px;width:20px;height:20px}
+.setup-no-timer span{display:flex;flex-direction:column;gap:3px}
+.setup-no-timer strong{font-size:13px}
+.setup-no-timer small{color:#6b9481;line-height:1.6;font-size:11px}
+.setup-field-note{color:#8392a9;font-size:11px;margin:9px 0 0}
+.setup-actions{border-top:1px solid #e8edf5;margin-top:27px;padding-top:21px}
+.setup-aside .aside-art.study-art{background:linear-gradient(135deg,#16795c,#29a779)}
+.setup-aside .aside-art.exam-art{background:linear-gradient(135deg,#26458d,#5376d8)}
+.setup-aside strong{font-weight:750;color:#4a5974}
+.setup-card,.setup-aside{height:fit-content}
+@media(max-width:990px){.setup-mode-banner{flex-wrap:wrap}.setup-switch{margin-left:85px}}
+@media(max-width:740px){.setup-mode-banner{gap:13px;padding:20px}.setup-mode-emblem{width:50px;height:50px;border-radius:14px}.setup-mode-emblem svg{width:25px;height:25px}.setup-mode-banner h2{font-size:18px}.setup-switch{margin-left:0;width:100%;justify-content:center}.setup-mode-copy{flex-basis:calc(100% - 65px)}.setup-card .setup-section-top{padding-bottom:17px}}

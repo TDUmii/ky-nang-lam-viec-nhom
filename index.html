@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f3eee5">
+  <meta name="application-name" content="Góc Học Nhóm">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <meta name="description" content="Ôn tập 250 câu Kỹ năng làm việc nhóm: ôn từng câu, thi thử, làm nhanh 3 phút 5 phút, luyện lại câu sai.">
+  <title>Góc Học Nhóm | Ôn thi Kỹ năng làm việc nhóm</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23778368%22/%3E%3Ctext x=%2232%22 y=%2245%22 text-anchor=%22middle%22 font-size=%2230%22 font-family=%22Georgia%22 font-weight=%22bold%22 fill=%22white%22%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./polish.css?v=separate-study-exam-20261107">
+  <link rel="stylesheet" href="./setup-modes.css?v=20261107">
+  <link rel="stylesheet" href="./mobile.css?v=smart-recall-20261107">
+  <link rel="stylesheet" href="./learning.css?v=smart-recall-20261107">
+  <link rel="stylesheet" href="./paper.css?v=20261111">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">N<span>.</span></div>
+        <div class="brand-copy"><strong>Góc Học Nhóm</strong><small>STUDY NOTEBOOK / 2026</small></div>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">KHÔNG GIAN HỌC TẬP</div>
+        <nav class="nav-list" aria-label="Điều hướng chính">
+          <button type="button" class="nav-item active" data-nav="home"><span class="nav-icon" data-i="home"></span><span>Tổng quan</span></button>
+          <button type="button" class="nav-item" data-nav="library"><span class="nav-icon" data-i="library"></span><span>Ngân hàng câu hỏi</span></button>
+          <button type="button" class="nav-item" data-nav="setup" data-mode="study"><span class="nav-icon" data-i="book"></span><span>Ôn tập từng câu</span></button>
+          <button type="button" class="nav-item" data-nav="setup" data-mode="exam"><span class="nav-icon" data-i="timer"></span><span>Thi thử</span></button>
+          <button type="button" class="nav-item quick-nav" data-nav="quick"><span class="nav-icon" data-i="bolt"></span><span>Làm nhanh 3p / 5p</span><span class="quick-nav-dot"></span></button>
+        </nav>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">CÁ NHÂN</div>
+        <nav class="nav-list" aria-label="Dữ liệu học tập">
+          <button type="button" class="nav-item" data-nav="mistakes"><span class="nav-icon" data-i="target"></span><span>Câu cần luyện lại</span><span class="nav-badge" id="mistakeCount">0</span></button>
+          <button type="button" class="nav-item" data-nav="bookmarks"><span class="nav-icon" data-i="bookmark"></span><span>Đã đánh dấu</span><span class="nav-badge" id="bookmarkCount">0</span></button>
+          <button type="button" class="nav-item" data-nav="history"><span class="nav-icon" data-i="chart"></span><span>Lịch sử kết quả</span></button>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-help">
+          <span class="help-bullet"></span><strong>Học offline, dữ liệu riêng tư</strong>
+          <p>Tất cả kết quả được lưu trên trình duyệt của bạn. Không cần tài khoản hay máy chủ.</p>
+        </div>
+        <div class="sidebar-footer">KỸ NĂNG LÀM VIỆC NHÓM <span>•</span> ÔN THI HỌC PHẦN</div>
+      </div>
+    </aside>
+    <div class="mobile-overlay" id="mobileOverlay" hidden></div>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button type="button" id="mobileMenu" class="icon-button menu-toggle" aria-label="Mở menu"><span data-i="menu"></span></button>
+          <div class="breadcrumb"><span>Không gian ôn thi</span><span class="chevron">/</span><strong id="pageTitle">Tổng quan</strong></div>
+        </div>
+        <div class="topbar-right">
+          <span class="offline-status"><span class="status-dot"></span> Sẵn sàng học</span>
+          <div class="user-chip" title="Kỹ năng làm việc nhóm">KN</div>
+        </div>
+      </header>
+      <nav class="mobile-bottom-nav" aria-label="Thanh điều hướng trên điện thoại">
+        <button type="button" class="mobile-tab active" data-nav="home"><span data-i="home"></span><small>Trang chủ</small></button>
+        <button type="button" class="mobile-tab" data-nav="setup" data-mode="study"><span data-i="book"></span><small>Ôn tập</small></button>
+        <button type="button" class="mobile-tab" data-nav="setup" data-mode="exam"><span data-i="timer"></span><small>Thi thử</small></button>
+        <button type="button" class="mobile-tab" data-nav="quick"><span data-i="bolt"></span><small>Làm nhanh</small></button>
+      </nav>
+      <div class="source-ribbon"><span class="source-dot"></span><strong>250 câu từ tài liệu PDF</strong><span>·</span><span>Đáp án trích từ chữ màu đỏ trong PDF</span></div>
+      <main class="main" id="viewRoot" tabindex="-1"><noscript>Vui lòng bật JavaScript để sử dụng trang ôn tập.</noscript></main>
+      <footer class="main-footer">Ngân hàng trích từ PDF 35 trang do bạn cung cấp <span>•</span> Đáp án lấy từ nội dung được tô đỏ trong PDF.</footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="importProgress" accept=".json,application/json" hidden aria-label="Nhập dữ liệu tiến độ">
+  <script src="./bank.js"></script>
+  <script src="./app.js?v=teamwork-20261111"></script>
+  <script>
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
