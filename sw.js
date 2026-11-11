@@ -1,7 +1,7 @@
-const CACHE_NAME = 'su-ky-mobile-v2-recall-20261107';
+const CACHE_NAME = 'goc-hoc-nhom-v1-20261111';
 const CORE = [
   './', './index.html', './styles.css', './polish.css', './setup-modes.css',
-  './mobile.css', './learning.css', './app.js', './bank.js', './manifest.webmanifest',
+  './mobile.css', './learning.css', './paper.css', './app.js', './bank.js', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png'
 ];
 self.addEventListener('install', (event) => {
@@ -12,7 +12,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => Promise.all(
-      keys.filter((key) => key.startsWith('su-ky-mobile-') && key !== CACHE_NAME).map((key) => caches.delete(key))
+      keys.filter((key) => key.startsWith('goc-hoc-nhom-') && key !== CACHE_NAME).map((key) => caches.delete(key))
     )).then(() => self.clients.claim())
   );
 });
