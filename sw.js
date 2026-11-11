@@ -1,4 +1,4 @@
-const CACHE_NAME = 'goc-hoc-nhom-v1-20261111';
+const CACHE_NAME = 'goc-hoc-nhom-v3-20261111';
 const CORE = [
   './', './index.html', './styles.css', './polish.css', './setup-modes.css',
   './mobile.css', './learning.css', './paper.css', './app.js', './bank.js', './manifest.webmanifest',
